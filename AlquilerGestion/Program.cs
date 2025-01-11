@@ -10,6 +10,7 @@ using Departamento = AlquilerGestion.Windows.Departamentos;
 using Inquilino = AlquilerGestion.Windows.Inquilinos;
 using Pagos = AlquilerGestion.Windows.Pagos;
 using HistorialAlquilercs = AlquilerGestion.Windows.HistorialAlquilercs;
+using AlquilerGestion.SecondWindows;
 
 namespace AlquilerGestion
 {
@@ -50,6 +51,7 @@ namespace AlquilerGestion
             services.AddTransient<Inquilino>();
             services.AddTransient<Pagos>();
             services.AddTransient<HistorialAlquilercs>();
+            services.AddTransient<FormInquilinos>();
         }
 
         private static void RegistrarRepositoriosYServicios(IServiceCollection services)

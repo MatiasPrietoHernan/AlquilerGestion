@@ -34,7 +34,7 @@
             button2 = new Button();
             button3 = new Button();
             label2 = new Label();
-            textBox1 = new TextBox();
+            textId = new TextBox();
             textBox2 = new TextBox();
             label3 = new Label();
             button4 = new Button();
@@ -48,6 +48,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(499, 270);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentDoubleClick += dataGridView1_CellContentDoubleClick;
             // 
             // label1
             // 
@@ -67,6 +68,7 @@
             button1.TabIndex = 2;
             button1.Text = "Agregar Inquilino";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -96,12 +98,12 @@
             label2.TabIndex = 3;
             label2.Text = "ID Inquilino";
             // 
-            // textBox1
+            // textId
             // 
-            textBox1.Location = new Point(167, 383);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 4;
+            textId.Location = new Point(167, 383);
+            textId.Name = "textId";
+            textId.Size = new Size(100, 23);
+            textId.TabIndex = 4;
             // 
             // textBox2
             // 
@@ -137,7 +139,7 @@
             Controls.Add(button4);
             Controls.Add(label3);
             Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textId);
             Controls.Add(label2);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -160,7 +162,7 @@
         private Button button2;
         private Button button3;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox textId;
         private TextBox textBox2;
         private Label label3;
         private Button button4;
