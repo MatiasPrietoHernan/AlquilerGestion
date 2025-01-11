@@ -218,6 +218,7 @@
             button1.TabIndex = 2;
             button1.Text = "Buscar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox1
             // 
@@ -314,6 +315,7 @@
             MaximizeBox = false;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

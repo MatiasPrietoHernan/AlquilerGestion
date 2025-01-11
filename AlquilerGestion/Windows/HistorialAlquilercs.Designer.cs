@@ -46,7 +46,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(46, 99);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(421, 283);
+            dataGridView1.Size = new Size(538, 283);
             dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -61,7 +61,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(509, 90);
+            button1.Location = new Point(637, 99);
             button1.Name = "button1";
             button1.Size = new Size(110, 47);
             button1.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(509, 170);
+            button2.Location = new Point(637, 179);
             button2.Name = "button2";
             button2.Size = new Size(110, 47);
             button2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(509, 247);
+            button3.Location = new Point(637, 256);
             button3.Name = "button3";
             button3.Size = new Size(110, 47);
             button3.TabIndex = 2;
@@ -134,7 +134,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(680, 450);
+            ClientSize = new Size(866, 450);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(button4);
@@ -147,6 +147,7 @@
             Controls.Add(dataGridView1);
             Name = "HistorialAlquilercs";
             Text = "HistorialAlquilercs";
+            Load += HistorialAlquilercs_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

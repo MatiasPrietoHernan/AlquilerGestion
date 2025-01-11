@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BussinessLogic.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,16 @@ namespace AlquilerGestion.Windows
 {
     public partial class Departamentos : Form
     {
-        public Departamentos()
+        private readonly IDepartamentosServices departamentosServices;
+        public Departamentos(IDepartamentosServices _departamentosServices)
         {
             InitializeComponent();
+            departamentosServices = _departamentosServices;
+        }
+
+        private async void Departamentos_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = await departamentosServices.GetAllDepartamentosAsync();
         }
     }
 }

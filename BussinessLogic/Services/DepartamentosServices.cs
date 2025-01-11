@@ -10,7 +10,7 @@ using DataLayer.Interfaces;
 
 namespace BussinessLogic.Services
 {
-    internal class DepartamentosServices : IDepartamentosServices
+    public class DepartamentosServices : IDepartamentosServices
     {
         private readonly IGenericRepositry<Departamentos> _departamentoRepository;
 

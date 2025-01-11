@@ -146,6 +146,7 @@
             Controls.Add(dataGridView1);
             Name = "Inquilinos";
             Text = "Inquilinos";
+            Load += Inquilinos_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
