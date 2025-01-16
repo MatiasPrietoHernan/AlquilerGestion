@@ -33,11 +33,11 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            nombreTxt = new TextBox();
+            materialesTxt = new TextBox();
+            dimensionesTxt = new TextBox();
+            accesoriosTxt = new TextBox();
+            Idtxt = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
@@ -91,41 +91,41 @@
             label5.TabIndex = 0;
             label5.Text = "ID Departamento";
             // 
-            // textBox1
+            // nombreTxt
             // 
-            textBox1.Location = new Point(199, 75);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            nombreTxt.Location = new Point(199, 75);
+            nombreTxt.Name = "nombreTxt";
+            nombreTxt.Size = new Size(100, 23);
+            nombreTxt.TabIndex = 1;
             // 
-            // textBox2
+            // materialesTxt
             // 
-            textBox2.Location = new Point(199, 124);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
+            materialesTxt.Location = new Point(199, 124);
+            materialesTxt.Name = "materialesTxt";
+            materialesTxt.Size = new Size(100, 23);
+            materialesTxt.TabIndex = 1;
             // 
-            // textBox3
+            // dimensionesTxt
             // 
-            textBox3.Location = new Point(199, 171);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 1;
+            dimensionesTxt.Location = new Point(199, 171);
+            dimensionesTxt.Name = "dimensionesTxt";
+            dimensionesTxt.Size = new Size(100, 23);
+            dimensionesTxt.TabIndex = 1;
             // 
-            // textBox4
+            // accesoriosTxt
             // 
-            textBox4.Location = new Point(199, 226);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 1;
+            accesoriosTxt.Location = new Point(199, 226);
+            accesoriosTxt.Name = "accesoriosTxt";
+            accesoriosTxt.Size = new Size(100, 23);
+            accesoriosTxt.TabIndex = 1;
             // 
-            // textBox5
+            // Idtxt
             // 
-            textBox5.Location = new Point(199, 23);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 1;
+            Idtxt.Location = new Point(199, 23);
+            Idtxt.Name = "Idtxt";
+            Idtxt.ReadOnly = true;
+            Idtxt.Size = new Size(100, 23);
+            Idtxt.TabIndex = 1;
             // 
             // button1
             // 
@@ -135,6 +135,7 @@
             button1.TabIndex = 2;
             button1.Text = "Hecho";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // FormDepartamentos
             // 
@@ -142,11 +143,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(440, 373);
             Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox5);
-            Controls.Add(textBox1);
+            Controls.Add(accesoriosTxt);
+            Controls.Add(dimensionesTxt);
+            Controls.Add(materialesTxt);
+            Controls.Add(Idtxt);
+            Controls.Add(nombreTxt);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -154,6 +155,7 @@
             Controls.Add(label1);
             Name = "FormDepartamentos";
             Text = "FormDepartamentos";
+            Load += FormDepartamentos_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,11 +167,11 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox nombreTxt;
+        private TextBox materialesTxt;
+        private TextBox dimensionesTxt;
+        private TextBox accesoriosTxt;
+        private TextBox Idtxt;
         private Button button1;
     }
 }

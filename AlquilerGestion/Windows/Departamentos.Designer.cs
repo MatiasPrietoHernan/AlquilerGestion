@@ -34,7 +34,7 @@
             textBox1 = new TextBox();
             label3 = new Label();
             button1 = new Button();
-            textBox2 = new TextBox();
+            IdTxt = new TextBox();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -46,8 +46,9 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(27, 98);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(455, 315);
+            dataGridView1.Size = new Size(566, 315);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // label1
             // 
@@ -96,50 +97,53 @@
             button1.Text = "Buscar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // IdTxt
             // 
-            textBox2.Location = new Point(186, 429);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 2;
+            IdTxt.Location = new Point(186, 429);
+            IdTxt.Name = "IdTxt";
+            IdTxt.Size = new Size(100, 23);
+            IdTxt.TabIndex = 2;
             // 
             // button2
             // 
-            button2.Location = new Point(542, 114);
+            button2.Location = new Point(636, 112);
             button2.Name = "button2";
             button2.Size = new Size(105, 47);
             button2.TabIndex = 4;
             button2.Text = "Agregar nuevo Departamento";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(542, 182);
+            button3.Location = new Point(636, 180);
             button3.Name = "button3";
             button3.Size = new Size(105, 47);
             button3.TabIndex = 4;
             button3.Text = "Editar Departamento";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(542, 252);
+            button4.Location = new Point(636, 250);
             button4.Name = "button4";
             button4.Size = new Size(105, 47);
             button4.TabIndex = 4;
             button4.Text = "Eliminar Departamento";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Departamentos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(723, 479);
+            ClientSize = new Size(780, 479);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox2);
+            Controls.Add(IdTxt);
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label3);
@@ -161,7 +165,7 @@
         private TextBox textBox1;
         private Label label3;
         private Button button1;
-        private TextBox textBox2;
+        private TextBox IdTxt;
         private Button button2;
         private Button button3;
         private Button button4;

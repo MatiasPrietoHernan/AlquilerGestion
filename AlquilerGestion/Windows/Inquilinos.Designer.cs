@@ -48,7 +48,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(499, 270);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentDoubleClick += dataGridView1_CellContentDoubleClick;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // label1
             // 
@@ -78,6 +78,7 @@
             button2.TabIndex = 2;
             button2.Text = "Editar Inquilino";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // button3
             // 
@@ -87,6 +88,7 @@
             button3.TabIndex = 2;
             button3.Text = "Eliminar Inquilino";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label2
             // 

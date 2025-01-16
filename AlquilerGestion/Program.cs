@@ -52,6 +52,7 @@ namespace AlquilerGestion
             services.AddTransient<Pagos>();
             services.AddTransient<HistorialAlquilercs>();
             services.AddTransient<FormInquilinos>();
+            services.AddTransient<FormDepartamentos>();
         }
 
         private static void RegistrarRepositoriosYServicios(IServiceCollection services)

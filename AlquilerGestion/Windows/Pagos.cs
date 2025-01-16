@@ -35,5 +35,10 @@ namespace AlquilerGestion.Windows
 
             dataGridView1.DataSource = datos;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

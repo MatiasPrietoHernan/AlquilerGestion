@@ -78,5 +78,4 @@ namespace AlquilerGestion.SecondWindows
             }
         }
     }
-    }
 }
